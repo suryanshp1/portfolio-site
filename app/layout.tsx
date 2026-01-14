@@ -14,6 +14,36 @@ export const metadata: Metadata = {
   title: "Suryansh Pandey | Senior Backend & AI Engineer",
   description:
     "Portfolio of Suryansh Pandey, a Senior Backend & AI Engineer specialized in Python, Cloud Native, and Agentic AI.",
+  keywords: [
+    "Suryansh Pandey",
+    "Backend Engineer",
+    "AI Engineer",
+    "Python",
+    "Django",
+    "FastAPI",
+    "LangChain",
+    "Portfolio",
+  ],
+  authors: [{ name: "Suryansh Pandey", url: "https://suryanshp1.github.io/portfolio-site" }],
+  creator: "Suryansh Pandey",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://suryanshp1.github.io/portfolio-site",
+    title: "Suryansh Pandey | Senior Backend & AI Engineer",
+    description: "Building resilient, scalable systems that power the future of AI and Security.",
+    siteName: "Suryansh Pandey Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Suryansh Pandey | Senior Backend & AI Engineer",
+    description: "Building resilient, scalable systems that power the future of AI and Security.",
+    creator: "@suryanshp1",
+  },
+  icons: {
+    icon: "/portfolio-site/icon",
+    apple: "/portfolio-site/icon",
+  },
 };
 
 export default function RootLayout({
