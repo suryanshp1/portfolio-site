@@ -7,7 +7,7 @@ import { ArrowDown, Mail } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center overflow-hidden p-4">
+    <section className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center overflow-hidden p-4 pb-24">
       {/* Background Pattern */}
       <div className="absolute inset-0 z-0 bg-[radial-gradient(#4B68F7_2px,transparent_2px)] [background-size:24px_24px] opacity-10" />
 
@@ -54,7 +54,7 @@ export function Hero() {
           </ComicButton>
           <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume.pdf`} download="Suryansh_Pandey_Resume.pdf">
             <ComicButton variant="secondary">
-              <ArrowDown className="w-5 h-5 mr-2 inline-block" />
+              <ArrowDown className="h-5 w-5" />
               Download Resume
             </ComicButton>
           </a>
@@ -64,7 +64,7 @@ export function Hero() {
               (window.location.href = "mailto:" + RESUME_DATA.contact.email)
             }
           >
-            <Mail className="mr-2 inline-block h-5 w-5" />
+            <Mail className="h-5 w-5" />
             Contact Me
           </ComicButton>
         </motion.div>
@@ -73,7 +73,7 @@ export function Hero() {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-8"
+        className="absolute bottom-8 z-20"
       >
         <ArrowDown className="text-hero-blue h-8 w-8" />
       </motion.div>
