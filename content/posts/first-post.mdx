@@ -1,0 +1,51 @@
+---
+title: "Building Scalable AI Agents with Python"
+date: "2025-01-15"
+excerpt: "A deep dive into orchestrating multi-agent systems using LangGraph and CrewAI for enterprise automation."
+tags: ["AI", "Python", "LangChain"]
+---
+
+# Building Scalable AI Agents
+
+In the rapidly evolving landscape of Artificial Intelligence, **Agentic Workflows** are becoming the new standard for automation. Unlike traditional linear automation scripts, AI Agents can reason, plan, and react to dynamic environments.
+
+## Why Agents?
+
+1. **Adaptability**: Agents can handle edge cases that break regex-based parsers.
+2. **Tool Use**: They can interact with APIs, databases, and the file system.
+3. **Memory**: Long-term memory vectors allow context retention across sessions.
+
+## The Stack
+
+For my recent projects, I've been heavily relying on:
+
+- **LangGraph**: For defining cyclic graph-based flows.
+- **CrewAI**: For role-based agent orchestration.
+- **FastAPI**: To expose agents as microservices.
+
+### Code Example
+
+Here is a snippet showing a simple agent setup:
+
+```python
+from langchain.agents import initialize_agent, Tool
+from langchain.llms import OpenAI
+
+def search_tool(query):
+    return "Search results for: " + query
+
+tools = [
+    Tool(
+        name="Search",
+        func=search_tool,
+        description="Useful for answering questions about current events"
+    )
+]
+
+# Initialize the agent
+agent = initialize_agent(tools, llm, agent="zero-shot-react-description")
+```
+
+## Conclusion
+
+The future of backend engineering is hybrid: classical deterministic systems for stability, and probabilistic AI agents for flexibility.

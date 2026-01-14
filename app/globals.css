@@ -1,15 +1,24 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-comic: var(--font-bangers);
+
+  --color-hero-blue: #4b68f7;
+  --color-sky-blue: #4a92f3;
+  --color-golden: #f4d734;
+  --color-amber: #ffc213;
+  --color-punch-red: #ed5252;
+  --color-dark-bg: #1a1a2e;
+  --color-light-bg: #f8f9fa;
+  --color-text-primary: #2d3748;
+  --color-text-secondary: #718096;
+}
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +31,19 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+}
+
+/* Comic Utilities */
+.comic-shadow {
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.comic-border {
+  border: 3px solid black;
+}
+
+.comic-text {
+  font-family: var(--font-bangers), cursive;
+  letter-spacing: 0.05em;
 }
