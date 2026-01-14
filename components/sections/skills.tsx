@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 
 export function Skills() {
   return (
-    <section className="bg-light-bg dark:bg-dark-bg border-y-2 border-black py-20 dark:border-white">
+    <section className="bg-[var(--color-section-alt-light)] dark:bg-[var(--color-section-alt-dark)] border-y-2 border-[var(--color-border-light)] dark:border-[var(--color-border-dark)] py-20">
       <div className="container mx-auto px-4">
         <h2 className="font-comic mb-12 text-center text-5xl">
-          <span className="bg-golden border-2 border-black px-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+          <span className="bg-golden border-2 border-[var(--color-border-light)] dark:border-[var(--color-border-dark)] px-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)]">
             Power Ups
           </span>
         </h2>

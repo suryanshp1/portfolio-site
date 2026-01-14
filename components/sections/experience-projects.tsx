@@ -20,15 +20,15 @@ export function Projects() {
             hoverEffect
             className="flex h-full flex-col"
           >
-            <h3 className="font-comic bg-sky-blue mb-4 inline-block w-fit border-2 border-black px-2 text-3xl text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+            <h3 className="font-comic bg-sky-blue mb-4 inline-block w-fit border-2 border-[var(--color-border-light)] dark:border-[var(--color-border-dark)] px-2 text-3xl text-white shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_0px_rgba(255,255,255,0.3)]">
               {project.title}
             </h3>
-            <p className="mb-6 flex-grow text-lg">{project.description}</p>
+            <p className="mb-6 flex-grow text-lg text-[var(--color-text-body-light)] dark:text-[var(--color-text-body-dark)]">{project.description}</p>
             <div className="mb-6 flex flex-wrap gap-2">
               {project.techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="rounded border border-black bg-gray-200 px-2 py-1 text-sm font-bold text-black dark:bg-gray-800 dark:text-white"
+                  className="rounded border border-[var(--color-border-light)] dark:border-[var(--color-border-dark)] bg-gray-200 dark:bg-gray-700 px-2 py-1 text-sm font-bold text-black dark:text-white"
                 >
                   {tech}
                 </span>
@@ -66,31 +66,31 @@ export function Experience() {
             viewport={{ once: true }}
             className="relative pl-8 md:pl-0"
           >
-            <div className="absolute top-0 bottom-0 left-[50%] hidden w-1 -translate-x-1/2 bg-black md:block" />
+            <div className="absolute top-0 bottom-0 left-[50%] hidden w-1 -translate-x-1/2 bg-[var(--color-border-light)] dark:bg-[var(--color-border-dark)] md:block" />
 
             <div
               className={`items-center justify-between gap-8 md:flex ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
             >
               <div className="mb-4 md:mb-0 md:w-1/2" />
 
-              <div className="bg-punch-red absolute left-[-9px] h-6 w-6 rounded-full border-4 border-black md:left-[50%] md:-translate-x-1/2" />
+              <div className="bg-punch-red absolute left-[-9px] h-6 w-6 rounded-full border-4 border-[var(--color-border-light)] dark:border-[var(--color-border-dark)] md:left-[50%] md:-translate-x-1/2" />
 
               <div className="md:w-1/2">
                 <ComicCard
                   className={`${index % 2 === 0 ? "md:-rotate-2" : "md:rotate-2"} transition-transform hover:rotate-0`}
                 >
                   <div className="mb-2 flex flex-wrap items-start justify-between gap-2">
-                    <h3 className="font-comic text-xl font-bold">
+                    <h3 className="font-comic text-xl font-bold text-[var(--color-text-heading-light)] dark:text-[var(--color-text-heading-dark)]">
                       {role.company}
                     </h3>
-                    <span className="bg-golden border border-black px-2 text-sm font-bold">
+                    <span className="bg-golden border border-[var(--color-border-light)] dark:border-[var(--color-border-dark)] px-2 text-sm font-bold">
                       {role.start} - {role.end}
                     </span>
                   </div>
                   <h4 className="text-hero-blue mb-4 font-bold">
                     {role.title}
                   </h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-300">
+                  <p className="text-sm text-[var(--color-text-body-light)] dark:text-[var(--color-text-body-dark)]">
                     {role.description}
                   </p>
                 </ComicCard>

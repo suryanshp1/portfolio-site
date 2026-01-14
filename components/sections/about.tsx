@@ -18,23 +18,23 @@ export function About() {
         </h2>
 
         <div className="grid items-center gap-12 md:grid-cols-2">
-          <ComicCard className="bg-sky-blue/10 rotate-2">
-            <p className="text-lg leading-loose font-medium">
+          <ComicCard variant="primary" className="rotate-2">
+            <p className="text-lg leading-loose font-medium text-[var(--color-text-body-light)] dark:text-[var(--color-text-body-dark)]">
               {RESUME_DATA.about}
             </p>
           </ComicCard>
 
           <div className="space-y-6">
-            <ComicCard className="bg-golden -rotate-1">
-              <h3 className="font-comic mb-2 text-2xl">My Mission</h3>
-              <p>
+            <ComicCard variant="secondary" className="-rotate-1">
+              <h3 className="font-comic mb-2 text-2xl text-[var(--color-text-heading-light)] dark:text-[var(--color-text-heading-dark)]">My Mission</h3>
+              <p className="text-[var(--color-text-body-light)] dark:text-[var(--color-text-body-dark)]">
                 Building resilient, scalable systems that power the future of AI
                 and Security.
               </p>
             </ComicCard>
-            <ComicCard className="bg-punch-red/20 rotate-1">
-              <h3 className="font-comic mb-2 text-2xl">Current Status</h3>
-              <p>
+            <ComicCard variant="accent" className="rotate-1">
+              <h3 className="font-comic mb-2 text-2xl text-[var(--color-text-heading-light)] dark:text-[var(--color-text-heading-dark)]">Current Status</h3>
+              <p className="text-[var(--color-text-body-light)] dark:text-[var(--color-text-body-dark)]">
                 Open for new opportunities in Agentic AI and Backend Systems.
               </p>
             </ComicCard>

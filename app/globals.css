@@ -5,15 +5,50 @@
   --font-sans: var(--font-inter);
   --font-comic: var(--font-bangers);
 
+  /* Comic Brand Colors - Base */
   --color-hero-blue: #4b68f7;
   --color-sky-blue: #4a92f3;
   --color-golden: #f4d734;
   --color-amber: #ffc213;
   --color-punch-red: #ed5252;
-  --color-dark-bg: #1a1a2e;
+
+  /* Light Mode Colors */
   --color-light-bg: #f8f9fa;
-  --color-text-primary: #2d3748;
-  --color-text-secondary: #718096;
+  --color-dark-bg: #1a1a2e;
+
+  /* Card Backgrounds - Light Mode */
+  --color-card-primary-light: #E8EFFF;
+  --color-card-secondary-light: #FFF8E1;
+  --color-card-accent-light: #FFE8EA;
+  --color-card-neutral-light: #FFFFFF;
+
+  /* Card Backgrounds - Dark Mode */
+  --color-card-primary-dark: #1E2847;
+  --color-card-secondary-dark: #2A2416;
+  --color-card-accent-dark: #2A1A1D;
+  --color-card-neutral-dark: #262833;
+
+  /* Text Colors - Light Mode */
+  --color-text-heading-light: #1A1A1A;
+  --color-text-body-light: #4A5568;
+  --color-text-muted-light: #718096;
+
+  /* Text Colors - Dark Mode */
+  --color-text-heading-dark: #F5F5F5;
+  --color-text-body-dark: #A0AEC0;
+  --color-text-muted-dark: #718096;
+
+  /* Border Colors */
+  --color-border-light: #000000;
+  --color-border-dark: #FFFFFF;
+
+  /* Section Backgrounds - Light Mode */
+  --color-section-alt-light: #F0F4FF;
+  --color-section-contact-light: rgba(74, 146, 243, 0.1);
+
+  /* Section Backgrounds - Dark Mode */
+  --color-section-alt-dark: #141824;
+  --color-section-contact-dark: rgba(30, 40, 71, 0.5);
 }
 
 :root {

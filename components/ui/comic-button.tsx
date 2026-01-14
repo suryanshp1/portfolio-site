@@ -12,9 +12,9 @@ interface ComicButtonProps extends HTMLMotionProps<"button"> {
 export const ComicButton = React.forwardRef<HTMLButtonElement, ComicButtonProps>(
   ({ className, variant = "primary", size = "default", ...props }, ref) => {
     const variants = {
-      primary: "bg-hero-blue text-white",
-      secondary: "bg-golden text-black",
-      outline: "bg-white text-black",
+      primary: "bg-hero-blue text-white dark:bg-hero-blue dark:text-white",
+      secondary: "bg-golden text-black dark:bg-amber dark:text-black",
+      outline: "bg-white text-black dark:bg-[var(--color-card-neutral-dark)] dark:text-white dark:border-[var(--color-border-dark)]",
     };
 
     const sizes = {

@@ -16,11 +16,11 @@ export function Header() {
   ];
 
   return (
-    <header className="dark:bg-dark-bg/80 sticky top-0 z-50 w-full border-b-2 border-black bg-white/80 backdrop-blur-sm dark:border-white">
+    <header className="sticky top-0 z-50 w-full border-b-2 border-[var(--color-border-light)] dark:border-[var(--color-border-dark)] bg-white/80 dark:bg-[var(--color-dark-bg)]/80 backdrop-blur-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link
           href="/"
-          className="font-comic hover:text-hero-blue text-2xl font-bold tracking-wider transition-colors"
+          className="font-comic hover:text-hero-blue text-2xl font-bold tracking-wider transition-colors text-[var(--color-text-heading-light)] dark:text-[var(--color-text-heading-dark)]"
         >
           {RESUME_DATA.name.toUpperCase()}
         </Link>
@@ -34,7 +34,7 @@ export function Header() {
                 "font-comic hover:text-hero-blue relative text-xl tracking-wide uppercase transition-colors",
                 pathname === link.href
                   ? "text-hero-blue"
-                  : "text-text-primary dark:text-white"
+                  : "text-[var(--color-text-heading-light)] dark:text-[var(--color-text-heading-dark)]"
               )}
             >
               {link.name}

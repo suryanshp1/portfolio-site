@@ -23,7 +23,7 @@ export function Hero() {
         </motion.div>
 
         <h1 className="font-comic mb-6 text-6xl drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] md:text-8xl lg:text-9xl dark:drop-shadow-[4px_4px_0px_rgba(255,255,255,0.5)]">
-          <span className="text-black dark:text-white">I'M</span>{" "}
+          <span className="text-[var(--color-text-heading-light)] dark:text-[var(--color-text-heading-dark)]">I'M</span>{" "}
           <span className="text-hero-blue">
             {RESUME_DATA.name.split(" ")[0].toUpperCase()}
           </span>
@@ -33,7 +33,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="text-gray-600 mx-auto max-w-2xl text-xl leading-relaxed md:text-2xl dark:text-gray-300"
+          className="text-[var(--color-text-body-light)] dark:text-[var(--color-text-body-dark)] mx-auto max-w-2xl text-xl leading-relaxed md:text-2xl"
         >
           {RESUME_DATA.summary}
         </motion.p>
@@ -47,12 +47,12 @@ export function Hero() {
           <ComicButton onClick={() => (window.location.href = "#projects")}>
             View My Work
           </ComicButton>
-          <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume.pdf`} download="Suryansh_Pandey_Resume.pdf">
+          {/* <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume.pdf`} download="Suryansh_Pandey_Resume.pdf">
             <ComicButton variant="secondary">
               <ArrowDown className="h-5 w-5" />
               Download Resume
             </ComicButton>
-          </a>
+          </a> */}
           <ComicButton
             variant="outline"
             onClick={() =>
