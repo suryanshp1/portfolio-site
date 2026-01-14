@@ -22,23 +22,18 @@ export function Hero() {
           </span>
         </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.2, duration: 0.5 }}
-          className="font-comic text-text-primary mb-6 text-6xl drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] md:text-8xl lg:text-9xl dark:text-white dark:drop-shadow-[4px_4px_0px_rgba(255,255,255,0.5)]"
-        >
-          I'M{" "}
+        <h1 className="font-comic mb-6 text-6xl drop-shadow-[4px_4px_0px_rgba(0,0,0,1)] md:text-8xl lg:text-9xl dark:drop-shadow-[4px_4px_0px_rgba(255,255,255,0.5)]">
+          <span className="text-black dark:text-white">I'M</span>{" "}
           <span className="text-hero-blue">
             {RESUME_DATA.name.split(" ")[0].toUpperCase()}
           </span>
-        </motion.h1>
+        </h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="text-text-secondary mx-auto max-w-2xl text-xl leading-relaxed md:text-2xl dark:text-gray-300"
+          className="text-gray-600 mx-auto max-w-2xl text-xl leading-relaxed md:text-2xl dark:text-gray-300"
         >
           {RESUME_DATA.summary}
         </motion.p>

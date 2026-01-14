@@ -21,11 +21,17 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark mode overrides */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  /* Comic Theme Colors - Dark Mode */
+  --color-hero-blue: #4B68F7;
+  --color-punch-red: #FF4D4D;
+  --color-comic-yellow: #FFE135;
+  --color-speech-white: #1a1a1a;
+  /* Dark bubble */
 }
 
 body {

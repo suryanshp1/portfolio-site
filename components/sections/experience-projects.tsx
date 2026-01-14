@@ -28,7 +28,7 @@ export function Projects() {
               {project.techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="rounded border border-black bg-gray-200 px-2 py-1 text-sm font-bold"
+                  className="rounded border border-black bg-gray-200 px-2 py-1 text-sm font-bold text-black dark:bg-gray-800 dark:text-white"
                 >
                   {tech}
                 </span>

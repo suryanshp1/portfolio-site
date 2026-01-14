@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Bangers } from "next/font/google"; // Import Bangers for comic headers
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const bangers = Bangers({
@@ -11,6 +12,7 @@ const bangers = Bangers({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://suryanshp1.github.io/portfolio-site"),
   title: "Suryansh Pandey | Senior Backend & AI Engineer",
   description:
     "Portfolio of Suryansh Pandey, a Senior Backend & AI Engineer specialized in Python, Cloud Native, and Agentic AI.",
@@ -52,15 +54,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           inter.variable,
           bangers.variable,
-          "bg-light-bg dark:bg-dark-bg min-h-screen antialiased"
+          "bg-light-bg dark:bg-dark-bg min-h-screen antialiased transition-colors duration-300"
         )}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

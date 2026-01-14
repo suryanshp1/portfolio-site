@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { cn } from "@/lib/utils";
 import { RESUME_DATA } from "@/data/resume";
 import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export function Header() {
   const pathname = usePathname();
@@ -45,6 +46,7 @@ export function Header() {
               )}
             </Link>
           ))}
+          <ThemeToggle />
         </nav>
       </div>
     </header>
