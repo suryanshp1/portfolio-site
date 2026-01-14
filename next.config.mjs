@@ -10,6 +10,9 @@ const nextConfig = {
   output: "export",
   // Base path for GitHub Pages
   basePath: isProd ? "/portfolio-site" : "",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? "/portfolio-site" : "",
+  },
   // Disable image optimization for static export availability
   images: {
     unoptimized: true,

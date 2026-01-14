@@ -52,6 +52,12 @@ export function Hero() {
           <ComicButton onClick={() => (window.location.href = "#projects")}>
             View My Work
           </ComicButton>
+          <a href={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/resume.pdf`} download="Suryansh_Pandey_Resume.pdf">
+            <ComicButton variant="secondary">
+              <ArrowDown className="w-5 h-5 mr-2 inline-block" />
+              Download Resume
+            </ComicButton>
+          </a>
           <ComicButton
             variant="outline"
             onClick={() =>
