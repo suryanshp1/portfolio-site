@@ -13,7 +13,7 @@ export default function BlogIndex() {
       <Header />
       <main className="container mx-auto flex-grow px-4 py-12">
         <h1 className="font-comic mb-12 text-center text-6xl">
-          <span className="bg-golden inline-block -rotate-1 border-2 border-black px-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+          <span className="bg-golden inline-block -rotate-1 border-2 border-[var(--color-border-light)] dark:border-[var(--color-border-dark)] px-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.3)]">
             Dev Chronicles
           </span>
         </h1>
@@ -23,7 +23,7 @@ export default function BlogIndex() {
             <Link key={post.slug} href={`/blog/${post.slug}`}>
               <ComicCard hoverEffect className="flex h-full flex-col">
                 <div className="mb-4 flex items-start justify-between">
-                  <span className="font-mono text-sm font-bold text-gray-500">
+                  <span className="font-mono text-sm font-bold text-[var(--color-text-muted-light)] dark:text-[var(--color-text-muted-dark)]">
                     {post.meta.date}
                   </span>
                   <div className="flex gap-2">
@@ -34,10 +34,10 @@ export default function BlogIndex() {
                     ))}
                   </div>
                 </div>
-                <h2 className="font-comic group-hover:text-hero-blue mb-2 text-2xl transition-colors">
+                <h2 className="font-comic text-[var(--color-text-heading-light)] dark:text-[var(--color-text-heading-dark)] group-hover:text-hero-blue mb-2 text-2xl transition-colors">
                   {post.meta.title}
                 </h2>
-                <p className="flex-grow text-gray-600 dark:text-gray-300">
+                <p className="flex-grow text-[var(--color-text-body-light)] dark:text-[var(--color-text-body-dark)]">
                   {post.meta.excerpt}
                 </p>
                 <div className="text-hero-blue mt-4 text-sm font-bold tracking-wide uppercase">

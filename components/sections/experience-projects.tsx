@@ -57,7 +57,10 @@ export function Experience() {
     <section className="container mx-auto max-w-4xl px-4 py-20">
       <h2 className="font-comic mb-16 text-center text-5xl">Origin Story</h2>
 
-      <div className="space-y-12">
+      <div className="relative space-y-12">
+        {/* Continuous vertical timeline line */}
+        <div className="absolute top-0 bottom-0 left-4 hidden w-1 bg-[var(--color-border-light)] dark:bg-[var(--color-border-dark)] md:left-1/2 md:block md:-translate-x-1/2" />
+
         {RESUME_DATA.work.map((role, index) => (
           <motion.div
             key={`${role.company}-${role.start}`}
@@ -66,14 +69,12 @@ export function Experience() {
             viewport={{ once: true }}
             className="relative pl-8 md:pl-0"
           >
-            <div className="absolute top-0 bottom-0 left-[50%] hidden w-1 -translate-x-1/2 bg-[var(--color-border-light)] dark:bg-[var(--color-border-dark)] md:block" />
-
             <div
               className={`items-center justify-between gap-8 md:flex ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}
             >
               <div className="mb-4 md:mb-0 md:w-1/2" />
 
-              <div className="bg-punch-red absolute left-[-9px] h-6 w-6 rounded-full border-4 border-[var(--color-border-light)] dark:border-[var(--color-border-dark)] md:left-[50%] md:-translate-x-1/2" />
+              <div className="bg-punch-red absolute left-0 h-6 w-6 rounded-full border-4 border-[var(--color-border-light)] dark:border-[var(--color-border-dark)] md:left-[50%] md:-translate-x-1/2" />
 
               <div className="md:w-1/2">
                 <ComicCard

@@ -6,7 +6,7 @@ export const RESUME_DATA = {
   about:
     "Senior Backend & AI Engineer with 4+ years of experience building scalable distributed systems, AI automation platforms, and enterprise-grade security products. Specialized in Python microservices, event-driven architectures, LLM-powered agents, and cloud-native platforms.",
   summary:
-    "Proven track record of delivering high-performance backend systems, agentic AI workflows, and DevSecOps automation used by global enterprises. Expert in Python, Django, FastAPI, LangChain, and Cloud Remediation.",
+    "Proven track record of delivering high-performance backend systems, agentic AI workflows, microservices and DevSecOps automation used by global enterprises.",
   avatarUrl: "/images/profile.jpg", // Placeholder
   personalWebsiteUrl: "https://github.com/suryanshp1",
   contact: {
@@ -109,7 +109,7 @@ export const RESUME_DATA = {
         "Autonomous SAST agent that detects vulnerabilities, generates fixes, and creates pull requests. Implemented CI-ready Docker workflows and Slack alerts.",
       link: {
         label: "GitHub",
-        href: "https://github.com/suryanshp1",
+        href: "https://github.com/suryanshp1/python-SAST-agent",
       },
     },
     {
@@ -119,7 +119,7 @@ export const RESUME_DATA = {
         "Agentic content automation platform using multi-agent orchestration. Enabled real-time Bluesky integration for LLM-powered workflows.",
       link: {
         label: "GitHub",
-        href: "https://github.com/suryanshp1",
+        href: "https://github.com/suryanshp1/bluesky-ebook-generator-ai-agent",
       },
     },
   ],

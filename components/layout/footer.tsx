@@ -23,7 +23,7 @@ export function Footer() {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:bg-hero-blue rounded-full border-2 border-[var(--color-border-light)] dark:border-[var(--color-border-dark)] p-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_0px_rgba(255,255,255,0.3)] transition-all hover:-translate-y-1 hover:text-white"
+                className="text-[var(--color-text-heading-light)] dark:text-[var(--color-text-heading-dark)] hover:bg-hero-blue rounded-full border-2 border-[var(--color-border-light)] dark:border-[var(--color-border-dark)] p-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] dark:shadow-[2px_2px_0px_0px_rgba(255,255,255,0.3)] transition-all hover:-translate-y-1 hover:text-white"
               >
                 <Icon size={20} />
               </a>
